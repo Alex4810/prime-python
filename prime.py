@@ -1,20 +1,20 @@
 import math
-prime = None
+
+prime = True  # Initialize prime as True
 
 number = int(input("Please enter a number: "))
-if(input == 2 ):
+
+if number == 2:
     prime = True
-elif(input == 1):
+elif number == 1:
     prime = False
 else:
-    for x in range (0, math.sqrt(number)):
-        if(number%x == 0):
+    for x in range(2, int(math.sqrt(number)) + 1):
+        if number % x == 0:
             prime = False
-    prime = True
+            break  # Exit the loop as soon as a divisor is found
 
-if(prime == True):
+if prime:
     print("Prime")
 else:
     print("Not prime")
-
-
