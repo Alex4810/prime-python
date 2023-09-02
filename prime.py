@@ -23,6 +23,8 @@ else:
             break  # Exit the loop as soon as a divisor is found
 #prints the final result to the user
 if prime:
+#if the number is prime
     print("Prime")
 else:
+#if the number is not prime
     print("Not prime")
